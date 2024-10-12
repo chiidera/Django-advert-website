@@ -1,0 +1,22 @@
+{% extends 'adverts/base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+    <div class="row">
+        {% for advert in adverts %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{ advert.image.url }}" class="card-img-top" alt="{{ advert.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ advert.title }}</h5>
+                        <p class="card-text">{{ advert.description }}</p>
+                        <a href="{{ advert.link }}" class="btn btn-primary">Go to Link</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

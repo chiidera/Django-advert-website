@@ -1,0 +1,24 @@
+{% extends "adverts/base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="home-container">
+    <div class="text">
+        <h2> Buy Smart.</h2>
+        <h2> Save More.</h2>
+        <p> We do the research to bring amazing deals for you at discounted prices </p>
+        <button> <a class="nav-link custom-color " href="{% url 'advert_list' %}"> View Adverts</a></button>
+    </div>
+
+    <div class="image">
+        <img src="{% static 'adverts/images/SW-Camera-and-House-1024x586.png' %}" alt="Logo">
+
+    </div>
+
+</div>
+
+
+{% endblock %}
