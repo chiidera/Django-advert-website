@@ -80,7 +80,7 @@ DATABASES = {
         'NAME':'railway',
         'USER': 'postgres',
         # 'PASSWORD': os.environ.get('RAILWAYAPP_DB_PASSWORD'), # this is for getting the password in our .env file when we are working with railway database from our local machine
-        'PASSWORD': os.environ('RAILWAYAPP_DB_PASSWORD'), # WE USE THIS WITHOUT THE .get COS IT WAS ADDED AS A VARIABLE IN OUR ADVERT PROJECT IN RAILWAY
+        'PASSWORD': os.environ['RAILWAYAPP_DB_PASSWORD'], # WE USE THIS WITHOUT THE .get COS IT WAS ADDED AS A VARIABLE IN OUR ADVERT PROJECT IN RAILWAY
         'HOST': 'junction.proxy.rlwy.net',
         'PORT': '49314', 
     }
