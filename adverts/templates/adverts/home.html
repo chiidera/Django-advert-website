@@ -5,20 +5,45 @@
 
 {% block content %}
 
-<div class="home-container">
-    <div class="text">
-        <h2> Buy Smart.</h2>
-        <h2> Save More.</h2>
-        <p> We do the research to bring amazing deals for you at discounted prices </p>
-        <button> <a class="nav-link custom-color " href="{% url 'advert_list' %}"> View Adverts</a></button>
+{% comment %} <div class="container-fluid mt-4">
+    <div class="home-container">
+        <div class="text">
+            <h2> Buy Smart.</h2>
+            <h2> Save More.</h2>
+            <p> We do the research to bring amazing deals for you at discounted prices </p>
+            <button> <a class="nav-link custom-color " href="{% url 'advert_list' %}"> View Adverts</a></button>
+        </div>
+
+        <div class="image">
+            <img src="{% static 'adverts/images/SW-Camera-and-House-1024x586.png' %}" alt="Logo">
+
+        </div>
+
     </div>
+</div>  {% endcomment %}
 
-    <div class="image">
-        <img src="{% static 'adverts/images/SW-Camera-and-House-1024x586.png' %}" alt="Logo">
 
+
+
+
+<div class= 'container mt-4'>
+    <div class="home-container d-flex flex-wrap">
+        <div class="content-section col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center">
+            <h2 class="display-4">Buy Smart.</h2>
+            <h2 class="display-4">Save More.</h2>
+            <p>We do the research to bring amazing deals for you at discounted prices.</p>
+            <a href="{% url 'advert_list' %}" class="btn btn-danger mt-4">View Adverts</a>
+        </div>
+
+        
+
+        <div class="image-section col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img src="{% static 'adverts/images/SW-Camera-and-House-1024x586.png' %}" class="img-fluid" alt="Advert Image">
+        </div>
     </div>
+</div> 
 
-</div>
+
 
 
 {% endblock %}

@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-^*@0nw!2=8^=5duai&^4j^q*%*mwq-pi#o*)-wysn(!)s6c6aw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-advert-website-production.up.railway.app',  'https://django-advert-website-production.up.railway.app']
+ALLOWED_HOSTS = ['django-advert-website-production.up.railway.app',  'https://django-advert-website-production.up.railway.app', '127.0.0.1', '127.0.0.1:8000']
 
 CSRF_TRUSTED_ORIGINS = ['https://django-advert-website-production.up.railway.app']
 
